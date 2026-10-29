@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Son Sop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="box1">
+        <div class="box2">
+
+            <div class="tillar">
+                <button class="til" data-til="uz" onclick="tilOzgartir('uz')">UZ</button>
+                <button class="til" data-til="ru" onclick="tilOzgartir('ru')">RU</button>
+                <button class="til" data-til="en" onclick="tilOzgartir('en')">EN</button>
+                <button class="til" data-til="tr" onclick="tilOzgartir('tr')">TR</button>
+            </div>
+
+            <button class="sozBTN" id="sozBTN" onclick="sozlamaOchYop()"></button>
+
+            <div class="sozlamalar yashirin" id="sozPanel">
+                <div class="qator">
+                    <label for="sozMax" id="sozMaxLabel"></label>
+                    <input id="sozMax" type="number" min="2" max="1000">
+                </div>
+                <div class="qator">
+                    <label for="sozCheklov" id="sozCheklovLabel"></label>
+                    <input id="sozCheklov" type="checkbox" onchange="cheklovOzgardi()">
+                </div>
+                <div class="qator" id="sozUrinishQator">
+                    <label for="sozUrinish" id="sozUrinishLabel"></label>
+                    <input id="sozUrinish" type="number" min="1" max="100">
+                </div>
+                <p id="sozXato" class="xato"></p>
+                <button class="saqlashBTN" id="saqlashBTN" onclick="sozlamaSaqlash()"></button>
+            </div>
+
+            <h1 id="sarlavha"></h1>
+            <p id="sorov"></p>
+
+            <h3 id="taxminLabel"></h3>
+            <input id="meningson" type="number">
+            <br>
+            <br>
+            <button class="tekshirishBTN" id="tekshirishBTN" onclick="tekshirish()"></button>
+            <h3 id="p"></h3>
+            <h3 id="urinish"></h3>
+            <p id="tarix"></p>
+
+            <button class="QaytaBTN" id="qaytaBTN" onclick="restart()"></button>
+        </div>
+    </div>
+
+    <!-- Java Script -->
+    <script src="./index.js"></script>
+</body>
+</html>
