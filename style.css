@@ -1,53 +1,93 @@
+/* ========================================
+   SON SOP - MODERN RESPONSIVE DESIGN
+   ======================================== */
+
+/* Global */
 * {
+    box-sizing: border-box;
     text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(27, 29, 69);
 }
 
-.box1 {
-    background-color: white;
-    width: 500px;
-    min-height: 560px;
-    margin: auto;
-    border-radius: 22px;
-    margin-top: 6%;
-    padding-bottom: 10px;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background: linear-gradient(152deg, rgba(38, 145, 212, 1) 0%, rgba(57, 230, 201, 1) 100%);
+    background: linear-gradient(
+        152deg,
+        rgba(38, 145, 212, 1) 0%,
+        rgba(57, 230, 201, 1) 100%
+    );
+
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
+    margin: 0;
+    padding: 25px 15px;
 }
 
-h1 {
-    font-size: 41px;
-    color: rgb(27, 29, 69);
+/* Main Container */
+.box1 {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    min-height: 560px;
+    margin: 4% auto 30px;
+    border-radius: 22px;
+    padding-bottom: 15px;
+    box-shadow: 0 15px 45px rgba(11, 11, 61, 0.15);
 }
 
 .box2 {
     padding: 4%;
-    width: 450px;
+    width: 100%;
 }
 
-/* Til tugmalari */
+/* Headings */
+h1 {
+    font-size: clamp(27px, 6vw, 41px);
+    color: rgb(27, 29, 69);
+    margin: 22px 0 15px;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
+h3 {
+    font-size: 18px;
+    color: rgb(27, 29, 69);
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Language Buttons */
 .tillar {
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
 }
 
 .til {
     width: 52px;
-    height: 34px;
+    height: 36px;
     border-radius: 10px;
     border: 1px solid rgb(11, 11, 61);
     background: white;
     color: rgb(11, 11, 61);
     font-size: 14px;
     font-weight: 700;
+    transition: 0.2s ease;
+}
+
+.til:hover {
+    background: rgb(230, 243, 255);
+    transform: translateY(-2px);
 }
 
 .til.aktiv {
@@ -55,22 +95,29 @@ h1 {
     color: white;
 }
 
-/* Sozlamalar */
+/* Settings Button */
 .sozBTN {
-    height: 36px;
+    min-height: 36px;
     padding: 0 18px;
     border-radius: 10px;
     border: 1px solid rgb(11, 11, 61);
     background: rgb(241, 251, 255);
     font-size: 14px;
     font-weight: 700;
+    transition: 0.2s ease;
 }
 
+.sozBTN:hover {
+    background: rgb(220, 243, 255);
+}
+
+/* Settings Panel */
 .sozlamalar {
     background: rgb(241, 251, 255);
     border-radius: 14px;
-    padding: 14px 18px;
-    margin: 12px 0;
+    padding: 16px 18px;
+    margin: 15px 0;
+    box-shadow: 0 4px 12px rgba(11, 11, 61, 0.05);
 }
 
 .yashirin {
@@ -81,12 +128,14 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    gap: 12px;
+    margin-bottom: 12px;
 }
 
 .qator label {
     text-align: left;
     font-size: 15px;
+    font-weight: 500;
 }
 
 .sozlamalar input[type="number"] {
@@ -101,66 +150,250 @@ h1 {
 .sozlamalar input[type="checkbox"] {
     width: 22px;
     height: 22px;
+    accent-color: rgb(11, 11, 61);
 }
 
 .xato {
     color: #c0392b;
     min-height: 18px;
-    margin: 4px 0 8px;
+    margin: 5px 0 10px;
     font-size: 14px;
 }
 
+/* Save Button */
 .saqlashBTN {
     width: 100%;
-    height: 40px;
+    min-height: 42px;
     border-radius: 12px;
     border: 0;
     font-size: 15px;
     font-weight: 700;
     background: rgb(11, 11, 61);
     color: white;
+    transition: 0.2s ease;
 }
 
-/* O'yin */
+.saqlashBTN:hover {
+    background: rgb(30, 42, 110);
+}
+
+/* Game Input */
 input {
-    width: 380px;
+    width: 100%;
     max-width: 380px;
-    height: 43px;
+    height: 46px;
     border-radius: 12px;
-    border: 1px solid grey;
+    border: 1px solid #c5c9d4;
     font-size: 17px;
     text-align: left;
     padding: 0 20px;
+    outline: none;
+    background: white;
+    transition: 0.2s ease;
 }
 
-.tekshirishBTN {
-    width: 420px;
-    height: 46px;
+input:focus {
+    border-color: rgb(38, 145, 212);
+    box-shadow: 0 0 0 3px rgba(38, 145, 212, 0.13);
+}
+
+/* Game Buttons */
+.tekshirishBTN,
+.QaytaBTN {
+    width: 100%;
+    max-width: 420px;
+    min-height: 46px;
     border-radius: 12px;
     border: 0;
     font-size: 17px;
     font-weight: 700;
+    transition: 0.2s ease;
+    padding: 8px 14px;
+}
+
+.tekshirishBTN {
     background: rgb(11, 11, 61);
     color: white;
 }
 
-.QaytaBTN {
-    width: 420px;
-    height: 46px;
-    border-radius: 12px;
-    border: 0;
-    font-size: 17px;
-    font-weight: 700;
-    background: rgb(241, 251, 255);
-    color: rgb(0, 0, 0);
+.tekshirishBTN:hover {
+    background: rgb(30, 42, 110);
+    transform: translateY(-2px);
 }
 
+.QaytaBTN {
+    background: rgb(241, 251, 255);
+    color: rgb(11, 11, 61);
+    margin-top: 12px;
+}
+
+.QaytaBTN:hover {
+    background: rgb(220, 243, 255);
+    transform: translateY(-2px);
+}
+
+/* Buttons */
 button {
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:active {
+    transform: scale(0.98);
 }
 
 button:disabled,
 input:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+    transform: none;
+}
+
+/* Game Messages */
+#p {
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+    font-size: 17px;
+    margin: 18px 0 10px;
+}
+
+#urinish {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#tarix {
+    font-size: 14px;
+    color: #62677c;
+    overflow-wrap: anywhere;
+}
+
+/* SEO Content */
+.seo-content {
+    max-width: 800px;
+    margin: 35px auto;
+    padding: 25px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(11, 11, 61, 0.10);
+}
+
+.seo-content h2 {
+    font-size: 21px;
+    color: rgb(27, 29, 69);
+    margin: 20px 0 10px;
+}
+
+.seo-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555b70;
+    margin-bottom: 22px;
+}
+
+/* Accessibility */
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid rgba(38, 145, 212, 0.6);
+    outline-offset: 3px;
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+        background-attachment: scroll;
+    }
+
+    .box1 {
+        width: 100%;
+        max-width: 500px;
+        margin: 10px auto 20px;
+        min-height: auto;
+        border-radius: 18px;
+    }
+
+    .box2 {
+        width: 100%;
+        padding: 18px 15px;
+    }
+
+    h1 {
+        font-size: clamp(26px, 8vw, 34px);
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    input {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .tekshirishBTN,
+    .QaytaBTN {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .sozlamalar {
+        padding: 14px 12px;
+    }
+
+    .qator label {
+        font-size: 13px;
+    }
+
+    .seo-content {
+        padding: 18px;
+        margin: 20px auto;
+    }
+
+    .seo-content h2 {
+        font-size: 19px;
+    }
+
+    .seo-content p {
+        font-size: 14px;
+    }
+}
+
+/* Very Small Phones */
+@media (max-width: 350px) {
+
+    .box2 {
+        padding: 15px 10px;
+    }
+
+    .til {
+        width: 46px;
+        height: 33px;
+    }
+
+    .qator {
+        gap: 6px;
+    }
+
+    .qator label {
+        font-size: 12px;
+    }
+
+    .sozlamalar input[type="number"] {
+        width: 75px;
+        max-width: 75px;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
 }
