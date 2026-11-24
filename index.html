@@ -1,62 +1,290 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uz">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Son Sop</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- ===== SEO: asosiy ===== -->
+    <title>Son Sop – Tasodifiy sonni top o'yini | Onlayn, bepul</title>
+    <meta
+      name="description"
+      content="Son Sop – bepul onlayn son topish o'yini. Kompyuter o'ylagan tasodifiy sonni cheklangan urinishda toping. 4 tilda: o'zbek, rus, ingliz, turk. Sozlamalarni o'zingiz belgilang."
+    />
+    <meta
+      name="keywords"
+      content="son sop, sonni top, tasodifiy son, son topish o'yini, onlayn o'yin, bepul o'yin, mantiqiy o'yin, guess the number, угадай число, sayı tahmin oyunu"
+    />
+    <meta name="author" content="Son Sop" />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large"
+    />
     <meta name="google-site-verification" content="QrkZX3nsyTWNHvbleUF8tkujkw_-cIqMmM3GyofCClA" />
-</head>
-<body>
+    <meta name="theme-color" content="#2691d4" />
 
+    <!-- !!! "https://sonsop.uz/" ni o'zingizning haqiqiy domeningizga almashtiring !!! -->
+    <link rel="canonical" href="https://sonsop.uz/" />
+
+    <!-- ===== SEO: Open Graph (Telegram, Facebook va h.k.) ===== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Son Sop" />
+    <meta property="og:title" content="Son Sop – Tasodifiy sonni top o'yini" />
+    <meta
+      property="og:description"
+      content="Kompyuter o'ylagan sonni topa olasizmi? Bepul onlayn mantiqiy o'yin – 4 tilda."
+    />
+    <meta property="og:url" content="https://sonsop.uz/" />
+    <meta property="og:image" content="https://sonsop.uz/favicon.png" />
+    <meta property="og:locale" content="uz_UZ" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="tr_TR" />
+
+    <!-- ===== SEO: Twitter ===== -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Son Sop – Tasodifiy sonni top o'yini" />
+    <meta
+      name="twitter:description"
+      content="Kompyuter o'ylagan sonni topa olasizmi? Bepul onlayn mantiqiy o'yin."
+    />
+    <meta name="twitter:image" content="https://sonsop.uz/favicon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- SEO blok uchun qo'shimcha responsive stillar (style.css o'zgarmagan) -->
+    <style>
+      .seo-content {
+        width: 100%;
+        max-width: 500px; /* o'yin kartochkasi bilan bir xil kenglik */
+        overflow-wrap: anywhere;
+      }
+      .seo-content details {
+        width: 100%;
+      }
+      .seo-toggle {
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        min-height: 44px; /* telefonda bosish oson */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .seo-toggle::-webkit-details-marker {
+        display: none;
+      }
+      .seo-toggle:focus-visible {
+        outline: 3px solid rgba(38, 145, 212, 0.6);
+        outline-offset: 3px;
+        border-radius: 8px;
+      }
+      @media (min-width: 900px) {
+        .seo-content {
+          max-width: 700px;
+        }
+      }
+      @media (max-width: 600px) {
+        .seo-content {
+          max-width: 500px;
+        }
+        .seo-toggle {
+          font-size: 15px;
+        }
+      }
+      @media (max-width: 350px) {
+        .seo-content {
+          padding: 14px 10px;
+        }
+        .seo-toggle {
+          font-size: 14px;
+        }
+      }
+    </style>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+
+    <!-- ===== SEO: Structured data (JSON-LD) ===== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Son Sop",
+        "alternateName": "Tasodifiy Sonni Top",
+        "url": "https://sonsop.uz/",
+        "description": "Kompyuter o'ylagan tasodifiy sonni cheklangan yoki cheksiz urinishda topish haqidagi bepul onlayn o'yin.",
+        "applicationCategory": "GameApplication",
+        "genre": "Puzzle",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript",
+        "inLanguage": ["uz", "ru", "en", "tr"],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "UZS"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Son Sop o'yini nima?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Son Sop – kompyuter o'ylagan tasodifiy sonni topishga asoslangan bepul onlayn mantiqiy o'yin. Har bir taxminingizdan so'ng o'yin o'ylangan son kattaroq yoki kichikroq ekanini aytadi."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Sonni qanday tezroq topish mumkin?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Eng yaxshi usul – oraliqni har safar ikkiga bo'lish (binar qidiruv). Masalan, 1 dan 100 gacha bo'lsa, avval 50 ni kiriting, javobga qarab oraliqni yarmiga qisqartiring."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O'yin sozlamalarini o'zgartirish mumkinmi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ha. Sozlamalar bo'limida eng katta sonni (2 dan 1000 gacha) va urinishlar sonini (1 dan 100 gacha) belgilash yoki urinishlar cheklovini o'chirib qo'yish mumkin."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O'yin qaysi tillarda mavjud?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O'yin o'zbek, rus, ingliz va turk tillarida mavjud. Tilni sahifa tepasidagi tugmalar orqali almashtirish mumkin."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
     <div class="box1">
-        <div class="box2">
-
-            <div class="tillar">
-                <button class="til" data-til="uz" onclick="tilOzgartir('uz')">UZ</button>
-                <button class="til" data-til="ru" onclick="tilOzgartir('ru')">RU</button>
-                <button class="til" data-til="en" onclick="tilOzgartir('en')">EN</button>
-                <button class="til" data-til="tr" onclick="tilOzgartir('tr')">TR</button>
-            </div>
-
-            <button class="sozBTN" id="sozBTN" onclick="sozlamaOchYop()"></button>
-
-            <div class="sozlamalar yashirin" id="sozPanel">
-                <div class="qator">
-                    <label for="sozMax" id="sozMaxLabel"></label>
-                    <input id="sozMax" type="number" min="2" max="1000">
-                </div>
-                <div class="qator">
-                    <label for="sozCheklov" id="sozCheklovLabel"></label>
-                    <input id="sozCheklov" type="checkbox" onchange="cheklovOzgardi()">
-                </div>
-                <div class="qator" id="sozUrinishQator">
-                    <label for="sozUrinish" id="sozUrinishLabel"></label>
-                    <input id="sozUrinish" type="number" min="1" max="100">
-                </div>
-                <p id="sozXato" class="xato"></p>
-                <button class="saqlashBTN" id="saqlashBTN" onclick="sozlamaSaqlash()"></button>
-            </div>
-
-            <h1 id="sarlavha"></h1>
-            <p id="sorov"></p>
-
-            <h3 id="taxminLabel"></h3>
-            <input id="meningson" type="number">
-            <br>
-            <br>
-            <button class="tekshirishBTN" id="tekshirishBTN" onclick="tekshirish()"></button>
-            <h3 id="p"></h3>
-            <h3 id="urinish"></h3>
-            <p id="tarix"></p>
-
-            <button class="QaytaBTN" id="qaytaBTN" onclick="restart()"></button>
+      <div class="box2">
+        <div class="tillar">
+          <button class="til" data-til="uz" onclick="tilOzgartir('uz')">
+            UZ
+          </button>
+          <button class="til" data-til="ru" onclick="tilOzgartir('ru')">
+            RU
+          </button>
+          <button class="til" data-til="en" onclick="tilOzgartir('en')">
+            EN
+          </button>
+          <button class="til" data-til="tr" onclick="tilOzgartir('tr')">
+            TR
+          </button>
         </div>
+
+        <button class="sozBTN" id="sozBTN" onclick="sozlamaOchYop()"></button>
+
+        <div class="sozlamalar yashirin" id="sozPanel">
+          <div class="qator">
+            <label for="sozMax" id="sozMaxLabel"></label>
+            <input id="sozMax" type="number" min="2" max="1000" />
+          </div>
+          <div class="qator">
+            <label for="sozCheklov" id="sozCheklovLabel"></label>
+            <input
+              id="sozCheklov"
+              type="checkbox"
+              onchange="cheklovOzgardi()"
+            />
+          </div>
+          <div class="qator" id="sozUrinishQator">
+            <label for="sozUrinish" id="sozUrinishLabel"></label>
+            <input id="sozUrinish" type="number" min="1" max="100" />
+          </div>
+          <p id="sozXato" class="xato"></p>
+          <button
+            class="saqlashBTN"
+            id="saqlashBTN"
+            onclick="sozlamaSaqlash()"
+          ></button>
+        </div>
+
+        <h1 id="sarlavha"></h1>
+        <p id="sorov"></p>
+
+        <h3 id="taxminLabel"></h3>
+        <input id="meningson" type="number" />
+        <br />
+        <br />
+        <button
+          class="tekshirishBTN"
+          id="tekshirishBTN"
+          onclick="tekshirish()"
+        ></button>
+        <h3 id="p"></h3>
+        <h3 id="urinish"></h3>
+        <p id="tarix"></p>
+
+        <button class="QaytaBTN" id="qaytaBTN" onclick="restart()"></button>
+      </div>
     </div>
+
+    <!-- ===== SEO matn bloki (qidiruv tizimlari o'qiydigan kontent) ===== -->
+    <section class="seo-content">
+      <details>
+        <summary class="seo-toggle">Son Sop haqida batafsil ▾</summary>
+      <h2>Son Sop – tasodifiy sonni top o'yini</h2>
+      <p>
+        Son Sop – bepul onlayn son topish o'yini. Kompyuter 1 dan tanlangan
+        eng katta songacha bo'lgan tasodifiy sonni o'ylaydi, siz esa uni
+        cheklangan urinishda topishga harakat qilasiz. Har bir taxmindan so'ng
+        o'yin o'ylangan son sizning sonningizdan kattaroq yoki kichikroq
+        ekanini bildiradi. Ro'yxatdan o'tish va yuklab olish shart emas –
+        telefon, planshet va kompyuterda to'g'ridan-to'g'ri brauzerda ishlaydi.
+      </p>
+
+      <h2>O'yin qanday o'ynaladi?</h2>
+      <p>
+        Maydonga o'zingiz o'ylagan sonni kiriting va «Tekshirish» tugmasini
+        bosing (yoki Enter tugmasidan foydalaning). Agar son noto'g'ri bo'lsa,
+        o'yin yo'nalishni aytadi. Oldingi taxminlaringiz ro'yxati ekranda
+        ko'rinib turadi, shuning uchun bir sonni ikki marta kiritib urinish
+        sarflamaysiz.
+      </p>
+
+      <h2>Sonni tezroq topish uchun maslahat</h2>
+      <p>
+        Eng samarali usul – oraliqni har safar ikkiga bo'lish (binar qidiruv).
+        Masalan, son 1 dan 100 gacha bo'lsa, avval 50 ni kiriting. Javob
+        «kattaroq» bo'lsa, endi 51–100 oralig'ida 75 ni sinab ko'ring, va
+        hokazo. Bu usul bilan 1 dan 100 gacha bo'lgan sonni eng ko'pi bilan 7
+        urinishda topish mumkin.
+      </p>
+
+      <h2>Sozlamalar va tillar</h2>
+      <p>
+        «Sozlamalar» bo'limida eng katta sonni (2 dan 1000 gacha), urinishlar
+        sonini (1 dan 100 gacha) o'zingiz belgilashingiz yoki urinishlar
+        cheklovini butunlay o'chirib qo'yishingiz mumkin. O'yin o'zbek, rus,
+        ingliz va turk tillarida mavjud, tanlangan til va sozlamalar
+        brauzeringizda saqlanadi.
+      </p>
+
+      <h2>Tez-tez beriladigan savollar</h2>
+      <p>
+        <strong>O'yin bepulmi?</strong> Ha, Son Sop butunlay bepul.<br />
+        <strong>Bu o'yin kimlar uchun?</strong> Bolalar va kattalar uchun –
+        mantiqiy fikrlash, hisoblash va diqqatni rivojlantirishga yordam
+        beradi.<br />
+        <strong>Internet doim kerakmi?</strong> Sahifa yuklangandan keyin o'yin
+        brauzerning o'zida ishlaydi.
+      </p>
+      </details>
+    </section>
 
     <!-- Java Script -->
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
